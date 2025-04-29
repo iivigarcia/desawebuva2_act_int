@@ -1,11 +1,10 @@
-/* Variables */
+
 :root {
     --primary: #1e293b;
     --secondary: #475569;
     --transition: 0.3s ease;
 }
 
-/* Hamburger menu styles */
 .hamburger {
     width: 30px;
     height: 24px;
@@ -29,7 +28,6 @@
     transition: var(--transition);
 }
 
-/* Menu toggle functionality */
 .menu-toggle:checked ~ nav {
     transform: translateY(0);
     opacity: 1;
@@ -49,7 +47,6 @@
     transform: rotate(-45deg) translate(7px, -7px);
 }
 
-/* Mobile navigation styles */
 @media (max-width: 1024px) {
     nav {
         transform: translateY(-10px);
@@ -80,13 +77,11 @@
     }
 }
 
-/* Smooth scrolling */
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
 }
 
-/* Card hover effects */
 section {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -96,7 +91,6 @@ section:hover {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
-/* Button hover effects */
 a {
     transition: all 0.2s ease;
 }
@@ -105,7 +99,6 @@ a:hover {
     transform: translateY(-1px);
 }
 
-/* Focus styles for accessibility */
 a:focus,
 button:focus {
     outline: none;
@@ -113,7 +106,6 @@ button:focus {
     border-radius: 4px;
 }
 
-/* Animations */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -129,7 +121,6 @@ main {
     animation: fadeIn 0.6s ease-out;
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
     width: 10px;
 }
