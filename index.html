@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño y Desarrollo Web</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e293b',
+                        secondary: '#475569'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 min-h-screen flex flex-col">
+    <header class="bg-primary text-white sticky top-0 z-50 shadow-lg">        
+        <input type="checkbox" id="menu-toggle" class="menu-toggle hidden">
+        <label for="menu-toggle" class="hamburger lg:hidden">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="container mx-auto px-4">
+            <ul class="flex flex-col lg:flex-row lg:justify-center lg:items-center gap-6 py-4">
+                <li><a href="https://iivigarcia.github.io/desawebuva1/index.html" class="hover:text-slate-300 transition-colors">Home</a></li>
+                <li><a href="https://iivigarcia.github.io/desawebuva1/sobre-mi.html" class="hover:text-slate-300 transition-colors">Sobre mí</a></li>
+                <li><a href="https://iivigarcia.github.io/desawebuva1/materias-2025.html" class="hover:text-slate-300 transition-colors">Materias 2025</a></li>
+                <li><a href="https://iivigarcia.github.io/desawebuva1/avisos.html" class="hover:text-slate-300 transition-colors">Avisos</a></li>
+                <li><a href="https://iivigarcia.github.io/desawebuva1/contacto.html" class="hover:text-slate-300 transition-colors">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container mx-auto px-4 py-8 flex-grow">
+        <h1 class="text-4xl font-bold text-center mb-8 text-slate-800">Diseño y Desarrollo Web</h1>
+
+        <div class="grid lg:grid-cols-2 gap-8">
+            <!-- Columna izquierda -->
+            <div class="space-y-8">
+                <!-- Fechas de exámenes -->
+                <section id="examenes" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <h2 class="text-2xl font-semibold mb-4 text-slate-800">Fechas de exámenes</h2>
+                    <ul class="space-y-4">
+                        <li class="flex items-center space-x-4 p-3 rounded-lg hover:bg-slate-50 transition-colors">
+                            <div class="bg-slate-800 text-white p-3 rounded-lg text-center min-w-[80px]">
+                                <span class="block text-sm">ABR</span>
+                                <span class="block text-xl font-bold">29</span>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-slate-800">Primer Examen Parcial</h3>
+                                <p class="text-slate-600 text-sm">2025</p>
+                            </div>
+                        </li>
+                        <li class="flex items-center space-x-4 p-3 rounded-lg hover:bg-slate-50 transition-colors">
+                            <div class="bg-slate-800 text-white p-3 rounded-lg text-center min-w-[80px]">
+                                <span class="block text-sm">JUN</span>
+                                <span class="block text-xl font-bold">24</span>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-slate-800">Segundo Examen Parcial</h3>
+                                <p class="text-slate-600 text-sm">2025</p>
+                            </div>
+                        </li>
+                        <li class="flex items-center space-x-4 p-3 rounded-lg hover:bg-slate-50 transition-colors">
+                            <div class="bg-slate-800 text-white p-3 rounded-lg text-center min-w-[80px]">
+                                <span class="block text-sm">JUL</span>
+                                <span class="block text-xl font-bold">08</span>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-slate-800">Examen Recuperatorio</h3>
+                                <p class="text-slate-600 text-sm">2025</p>
+                            </div>
+                        </li>
+                        <li class="flex items-center space-x-4 p-3 rounded-lg hover:bg-slate-50 transition-colors">
+                            <div class="bg-slate-800 text-white p-3 rounded-lg text-center min-w-[80px]">
+                                <span class="block text-sm">JUL</span>
+                                <span class="block text-xl font-bold">22</span>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-slate-800">Examen Final Regular</h3>
+                                <p class="text-slate-600 text-sm">2025</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Bibliografía -->
+                <section id="bibliografia" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <h2 class="text-2xl font-semibold mb-4 text-slate-800">Bibliografía</h2>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="https://www.w3schools.com/" target="_blank" 
+                               class="flex items-center p-3 rounded-lg hover:bg-slate-50 transition-colors">
+                                <span class="text-slate-800 hover:text-slate-600">W3Schools</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://developer.mozilla.org/es/" target="_blank"
+                               class="flex items-center p-3 rounded-lg hover:bg-slate-50 transition-colors">
+                                <span class="text-slate-800 hover:text-slate-600">MDN Web Docs</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.freecodecamp.org/" target="_blank"
+                               class="flex items-center p-3 rounded-lg hover:bg-slate-50 transition-colors">
+                                <span class="text-slate-800 hover:text-slate-600">freeCodeCamp</span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- Columna derecha - Actividades UVAs -->
+            <section id="actividades" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <h2 class="text-2xl font-semibold mb-6 text-slate-800">Actividades UVAs</h2>
+                
+                <!-- Unidad 1 -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-semibold mb-4 text-slate-700">Unidad 1</h3>
+                    <ul class="space-y-4">
+                        <li class="p-4 rounded-lg hover:bg-slate-50 transition-colors">
+                            <span class="font-medium text-slate-800 block mb-2">Ejercicio 1</span>
+                            <div class="flex flex-wrap gap-4">
+                                <a href="https://iivigarcia.github.io/desawebuva1/" target="_blank" 
+                                   class="inline-flex items-center px-4 py-2 bg-slate-800 text-white rounded-lg hover:bg-slate-700 transition-colors">
+                                    Ver página
+                                </a>
+                                <a href="https://github.com/iivigarcia/desawebuva1" target="_blank"
+                                   class="inline-flex items-center px-4 py-2 bg-slate-600 text-white rounded-lg hover:bg-slate-500 transition-colors">
+                                    Ver código
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Unidad 2 -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-slate-700">Unidad 2</h3>
+                    <ul class="space-y-4">
+                        <li class="p-4 rounded-lg hover:bg-slate-50 transition-colors">
+                            <span class="font-medium text-slate-800 block mb-2">Ejercicio 1</span>
+                            <div class="flex flex-wrap gap-4">
+                                <a href="https://iivigarcia.github.io/desawebuva2_act_1/" target="_blank"
+                                   class="inline-flex items-center px-4 py-2 bg-slate-800 text-white rounded-lg hover:bg-slate-700 transition-colors">
+                                    Ver página
+                                </a>
+                                <a href="https://github.com/iivigarcia/desawebuva2_act_1" target="_blank"
+                                   class="inline-flex items-center px-4 py-2 bg-slate-600 text-white rounded-lg hover:bg-slate-500 transition-colors">
+                                    Ver código
+                                </a>
+                            </div>
+                        </li>
+                        <li class="p-4 rounded-lg hover:bg-slate-50 transition-colors">
+                            <span class="font-medium text-slate-800 block mb-2">Ejercicio 2</span>
+                            <div class="flex flex-wrap gap-4">
+                                <a href="https://iivigarcia.github.io/desaweb_uva2_act2/" target="_blank"
+                                   class="inline-flex items-center px-4 py-2 bg-slate-800 text-white rounded-lg hover:bg-slate-700 transition-colors">
+                                    Ver página
+                                </a>
+                                <a href="https://github.com/iivigarcia/desaweb_uva2_act2" target="_blank"
+                                   class="inline-flex items-center px-4 py-2 bg-slate-600 text-white rounded-lg hover:bg-slate-500 transition-colors">
+                                    Ver código
+                                </a>
+                            </div>
+                        </li>
+                        <li class="p-4 rounded-lg hover:bg-slate-50 transition-colors">
+                            <span class="font-medium text-slate-800 block mb-2">Ejercicio 3</span>
+                            <div class="flex flex-wrap gap-4">
+                                <a href="https://iivigarcia.github.io/desaweb_uva2_act_3/" target="_blank"
+                                   class="inline-flex items-center px-4 py-2 bg-slate-800 text-white rounded-lg hover:bg-slate-700 transition-colors">
+                                    Ver página
+                                </a>
+                                <a href="https://github.com/iivigarcia/desaweb_uva2_act_3" target="_blank"
+                                   class="inline-flex items-center px-4 py-2 bg-slate-600 text-white rounded-lg hover:bg-slate-500 transition-colors">
+                                    Ver código
+                                </a>
+                            </div>
+                        </li>
+                        <li class="p-4 rounded-lg hover:bg-slate-50 transition-colors">
+                            <span class="font-medium text-slate-800 block mb-2">Ejercicio 4</span>
+                            <div class="flex flex-wrap gap-4">
+                                <a href="https://iivigarcia.github.io/desaweb_uva2_act_4/" target="_blank"
+                                   class="inline-flex items-center px-4 py-2 bg-slate-800 text-white rounded-lg hover:bg-slate-700 transition-colors">
+                                    Ver página
+                                </a>
+                                <a href="https://github.com/iivigarcia/desaweb_uva2_act_4" target="_blank"
+                                   class="inline-flex items-center px-4 py-2 bg-slate-600 text-white rounded-lg hover:bg-slate-500 transition-colors">
+                                    Ver código
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-4">
+        <div class="container mx-auto text-center px-4">
+            <p class="text-lg">Curso: Martes Noche / Profesora: Patricia Litovicius</p>
+        </div>
+    </footer>
+</body>
+</html>
